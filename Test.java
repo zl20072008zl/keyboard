@@ -33,6 +33,9 @@ public class Test {
 				outputTxt = keyboard.linearShiftValue;
 			}
 		}
-		System.out.println(outputTxt);
+		for (String output : outputTxt) {
+			System.out.print(output);
+		}
+		
 	}
 }

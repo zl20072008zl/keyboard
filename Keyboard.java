@@ -60,7 +60,6 @@ public class Keyboard {
 				this.charactersPlaceInArray = row4.indexOf(outputTxt.get(i));
 				this.horizontalFlipValue.add(row4.get((row4.size() - 1) - this.charactersPlaceInArray));
 			}
-
 		}
 		outputTxt = this.horizontalFlipValue;
 	}
@@ -70,16 +69,16 @@ public class Keyboard {
 		for(int i = 0; i < outputTxt.size(); i++) {
 			if(row1.contains(outputTxt.get(i))) {
 				this.charactersPlaceInArray = row1.indexOf(outputTxt.get(i));
-				this.verticalFlipValue.add(row1.get((row1.size() - 1) - this.charactersPlaceInArray));
+				this.verticalFlipValue.add(row4.get(this.charactersPlaceInArray));
 			}else if(row2.contains(outputTxt.get(i))) {
 				this.charactersPlaceInArray = row2.indexOf(outputTxt.get(i));
-				this.verticalFlipValue.add(row2.get((row2.size() - 1) - this.charactersPlaceInArray));
+				this.verticalFlipValue.add(row3.get(this.charactersPlaceInArray));
 			}else if(row3.contains(outputTxt.get(i))) {
 				this.charactersPlaceInArray = row3.indexOf(outputTxt.get(i));
-				this.verticalFlipValue.add(row3.get((row3.size() - 1) - this.charactersPlaceInArray));
+				this.verticalFlipValue.add(row2.get(this.charactersPlaceInArray));
 			}else if(row4.contains(outputTxt.get(i))) {
 				this.charactersPlaceInArray = row4.indexOf(outputTxt.get(i));
-				this.verticalFlipValue.add(row4.get((row4.size() - 1) - this.charactersPlaceInArray));
+				this.verticalFlipValue.add(row1.get(this.charactersPlaceInArray));
 			}
 
 		}
